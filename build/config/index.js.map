@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/config/index.js"],"names":["config","db"],"mappings":";;;;;;;AAAA;;AACA;;;;;;;;iCAGOA,e;AACHC,EAAAA,EAAE,EAAFA","sourcesContent":["import config from './config'\nimport db from './db/mongo';\n\nexport default {\n    ...config,\n    db\n}"],"file":"index.js"}

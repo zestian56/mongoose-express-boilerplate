@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/common/models/index.js"],"names":["models","User"],"mappings":";;;;;;;AACA;;;;AAEA,IAAMA,MAAM,GAAG;AACXC,EAAAA,IAAI,EAAJA;AADW,CAAf;eAGeD,M","sourcesContent":["\nimport User from './user/user.model';\n\nconst models = {\n    User\n}\nexport default models;"],"file":"index.js"}

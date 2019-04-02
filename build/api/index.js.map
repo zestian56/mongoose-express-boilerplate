@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/api/index.js"],"names":["api","app","models"],"mappings":";;;;;;;AAAA;;;;AAEA,IAAMA,GAAG,GAAG,SAANA,GAAM,CAACC,GAAD,EAAMC,MAAN,EAAiB;AACzB,sBAASD,GAAT,EAAcC,MAAd;AACH,CAFD;;eAGeF,G","sourcesContent":["import usersApi from './users';\n\nconst api = (app, models) => {\n    usersApi(app, models);\n}\nexport default api;\n"],"file":"index.js"}
