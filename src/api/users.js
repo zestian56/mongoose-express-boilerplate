@@ -1,5 +1,4 @@
 import status from 'http-status';
-import shortid from 'shortid';
 
 const usersApi = (app, { User }) => {
     app.get('/users', (req, res, next) => {
@@ -8,10 +7,10 @@ const usersApi = (app, { User }) => {
     app.post('/users', async (req, res, next) => {
         const { body } = req;
         try{
-            const customId = shortid.generate();
+            const docs = await User.find();
             const user = await User.create({
                 ...body,
-                id: customId
+                id: docs.length.toString().padStart(4,"0")
             })
             res.status(status.OK).json(user.toGraph());
         }
