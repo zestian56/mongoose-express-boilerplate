@@ -9,8 +9,7 @@ const dbSettings = {
 
 const serverSettings = {
   port: process.env.PORT,
-  host: process.env.SERVICEHOST,
-  secret: process.env.SECRET
+  host: process.env.SERVICEHOST
 };
 
 const config = {
