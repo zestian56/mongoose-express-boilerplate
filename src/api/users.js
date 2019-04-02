@@ -15,7 +15,7 @@ const usersApi = (app, { User }) => {
             res.status(status.OK).json(user.toGraph());
         }
         catch (err){
-            console.error(message)
+            console.error(err.message)
             return res.status(status.INTERNAL_SERVER_ERROR).send(err.message);
         }
 
