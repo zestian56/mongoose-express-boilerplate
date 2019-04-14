@@ -12,9 +12,14 @@ const serverSettings = {
   host: process.env.SERVICEHOST
 };
 
+const mailChimpSettings = {
+  apiKey: process.env.MAILCHIMP_API_KEY,
+  audienceId: process.env.MAILCHIMP_AUDIENCE_ID
+}
 const config = {
   serverSettings,
-  dbSettings
+  dbSettings,
+  mailChimpSettings
 }
 
 export default config;
